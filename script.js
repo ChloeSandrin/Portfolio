@@ -96,3 +96,24 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(section => observer.observe(section));
+
+// Form //
+
+document.getElementById("formFormulaire").addEventListener("submit",function(event) {
+    event.preventDefault();
+
+    grecaptcha.ready(function() {
+      grecaptcha.execute("6Lej8ZQsAAAAABdASrS1k_hthXu2NV2UIi3KGZPx", {action: "submit"}).then(function(token) {
+
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = "g-recaptcha-response";
+        input.value = token;
+
+        document.getElementById("formFormulaire").appendChild(input);
+
+        event.target.submit();
+      });
+    });
+});
+
