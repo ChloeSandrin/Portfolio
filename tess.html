@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/mgonjbjn" method="POST" id="contact-form">
+<input type="text" name="name" required>
+<input type="email" name="email" required>
+<textarea name="message" required></textarea>
+<button type="submit">Envoyer</button>
+</form>
+ 
+<script src="https://www.google.com/recaptcha/api.js?render=6Lej8ZQsAAAAABdASrS1k_hthXu2NV2UIi3KGZPx"></script>
+ 
+<script>
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+
+  e.preventDefault();
+ 
+  grecaptcha.ready(() => {
+
+    grecaptcha.execute("6Lej8ZQsAAAAABdASrS1k_hthXu2NV2UIi3KGZPx", { action: "submit" })
+
+      .then(token => {
+ 
+        let input = document.createElement("input");
+
+        input.type = "hidden";
+
+        input.name = "g-recaptcha-response";
+
+        input.value = token;
+ 
+        e.target.appendChild(input);
+
+        e.target.submit();
+
+      });
+
+  });
+
+});
+</script>
+ 
+</body>
+</html>
