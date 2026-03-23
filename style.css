@@ -1,60 +1,60 @@
 @font-face {
   font-family: "Oswald";
-  src: url(../assets/fonts/Oswald/Oswald-Bold.woff2) format("woff2");
+  src: url(assets/fonts/Oswald/Oswald-Bold.woff2) format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(../assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
+  src: url(assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(../assets/fonts/Oswald/Oswald-Medium.woff2) format("woff2");
+  src: url(assets/fonts/Oswald/Oswald-Medium.woff2) format("woff2");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(../assets/fonts/Oswald/Oswald-Regular.woff2) format("woff2");
+  src: url(assets/fonts/Oswald/Oswald-Regular.woff2) format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(../assets/fonts/Oswald/Oswald-Light.woff2) format("woff2");
+  src: url(assets/fonts/Oswald/Oswald-Light.woff2) format("woff2");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(../assets/fonts/Oswald/Oswald-ExtraLight.woff2) format("woff2");
+  src: url(assets/fonts/Oswald/Oswald-ExtraLight.woff2) format("woff2");
   font-weight: 200;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(../assets/fonts/Poppins/Poppins-Bold.woff2) format("woff2");
+  src: url(assets/fonts/Poppins/Poppins-Bold.woff2) format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(../assets/fonts/Poppins/Poppins-Regular.woff2) format("woff2");
+  src: url(assets/fonts/Poppins/Poppins-Regular.woff2) format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(../assets/fonts/Poppins/Poppins-Light.woff2) format("woff2");
+  src: url(assets/fonts/Poppins/Poppins-Light.woff2) format("woff2");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: url(../assets/fonts/BebaNeue/BebasNeue-Regular.woff2) format("woff2");
+  src: url(assets/fonts/BebaNeue/BebasNeue-Regular.woff2) format("woff2");
   font-weight: 400;
   font-display: swap;
 }
@@ -86,7 +86,7 @@ h1 {
 }
 
 body {
-  background-image: url("../assets/images/Fond nuage 1.png");
+  background-image: url("assets/images/Fond nuage 1.png");
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
@@ -354,7 +354,7 @@ header #NavbarFil5 {
   grid-column: 1;
   grid-row: 2;
   margin-left: 70px;
-  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-image: url(assets/images/Tableau\ de\ bord.png);
   background-repeat: no-repeat;
   width: 800px;
   height: 900px;
@@ -430,7 +430,7 @@ header #NavbarFil5 {
   grid-column: 1;
   grid-row: 2;
   margin-left: 70px;
-  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-image: url(assets/images/Tableau\ de\ bord.png);
   background-repeat: no-repeat;
   width: 800px;
   height: 600px;
@@ -441,7 +441,7 @@ header #NavbarFil5 {
   padding-top: 100px;
 }
 #tableauboard h3 {
-  background-image: url(../assets/images/surligne.png);
+  background-image: url(assets/images/surligne.png);
   background-repeat: no-repeat;
   background-position-x: 220px;
   background-position-y: 50px;
@@ -568,7 +568,7 @@ header #NavbarFil5 {
 }
 
 .mission {
-  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-image: url(assets/images/Tableau\ de\ bord.png);
   background-repeat: no-repeat;
   width: 800px;
   height: 500px;
