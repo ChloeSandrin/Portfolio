@@ -860,4 +860,8 @@ footer .bgBleu:hover {
   padding-right: 200px;
 }
 
+label span {
+  color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
