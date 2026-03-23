@@ -99,21 +99,37 @@ sections.forEach(section => observer.observe(section));
 
 // Form //
 
-document.getElementById("formFormulaire").addEventListener("submit",function(event) {
-    event.preventDefault();
-
-    grecaptcha.ready(function() {
-      grecaptcha.execute("6Lej8ZQsAAAAABdASrS1k_hthXu2NV2UIi3KGZPx", {action: "formspree"}).then(function(token) {
-
-        const input = document.createElement("input");
-        input.type = "hidden";
-        input.name = "g-recaptcha-response";
-        input.value = token;
-
-        document.getElementById("formFormulaire").appendChild(input);
-
-        event.target.submit();
+const form = document.getElementById("formFormulaire");
+ 
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+ 
+  grecaptcha.ready(async () => {
+    const token = await grecaptcha.execute("6Lej8ZQsAAAAABdASrS1k_hthXu2NV2UIi3KGZPx", { action: "formspree" });
+ 
+    // Construire les données à envoyer
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+      "g-recaptcha-response": token
+    };
+ 
+    try {
+      const response = await fetch("https://formspree.io/f/mgonjbjn", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
       });
-    });
+ 
+      if (!response.ok) throw new Error("Erreur lors de l'envoi du formulaire");
+ 
+      alert("Formulaire envoyé avec succès !");
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      alert("Erreur : " + err.message);
+    }
+  });
 });
 
