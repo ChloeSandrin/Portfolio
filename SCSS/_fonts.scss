@@ -1,0 +1,75 @@
+@use "variables" as *;
+
+@font-face {
+    font-family: "Oswald";
+    src: url(../assets/fonts/Oswald/Oswald-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(../assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(../assets/fonts/Oswald/Oswald-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(../assets/fonts/Oswald/Oswald-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(../assets/fonts/Oswald/Oswald-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(../assets/fonts/Oswald/Oswald-ExtraLight.woff2) format("woff2");
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins/Poppins-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins/Poppins-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins/Poppins-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../assets/fonts/BebaNeue/BebasNeue-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+li {
+    list-style: none;
+}

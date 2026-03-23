@@ -1,0 +1,130 @@
+@use "variables" as *;
+
+body {
+    background-image: url("../assets/images/Fond nuage 1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    font-weight: $Regular;
+    font-size: 18px;
+    color: $black-color;
+    overflow-x: hidden;
+}
+
+.fontTexte {
+    font-family: "Poppins";
+    font-weight: $Regular;
+    font-size: 18px;
+}
+
+.fontProjet {
+    font-family: "Oswald";
+    font-weight: $ExtraLight;
+    font-size: 70px;
+}
+
+.fontTableauBordBouton {
+    font-family: "Oswald";
+    font-weight: $Light;
+    font-size: 36px;
+}
+
+.fontProjetTexte {
+    font-family: "Oswald";
+    font-weight: $Regular;
+    font-size: 36px;
+}
+
+.fontProjetAnnexe {
+    font-family: "Oswald";
+    font-weight: $Medium;
+    font-size: 32px;
+}
+
+.fontTableauBordTitre {
+    font-family: "Oswald";
+    font-weight: $SemiBold;
+    font-size: 64px;
+    color: $secondary-color;
+}
+
+.fontGrandTexte {
+    font-family: "Oswald";
+    font-weight: $Bold;
+    font-size: 40px;
+}
+
+.fontFontNav {
+    font-family: "Oswald";
+    font-weight: $Bold;
+    font-size: 28px;
+}
+
+.fontBouton, button {
+    font-family: "Oswald";
+    font-weight: $Bold;
+    font-size: 24px;
+}
+
+.fonth2, h2 {
+    font-family: "Oswald";
+    font-weight: $Bold;
+    font-size: 36px;
+}
+
+.fontTableauBordTexte {
+    font-family: "Poppins";
+    font-weight: $Light;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.fontProjetLabel {
+    font-family: "Poppins";
+    font-weight: $Regular;
+    font-size: 20px;
+}
+
+.fontFooterLien {
+    font-family: "Poppins";
+    font-weight: $Regular;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.fontFormulaireLabel {
+    font-family: "Poppins";
+    font-weight: $Bold;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: $black-color;
+    display: block;
+    width: fit-content;
+}
+
+.bgJaune {
+    background-color: $primary-color;
+}
+
+.bgBleu {
+    background-color: $secondary-color;
+    color: $white-color;
+}
+
+
+
+.avion {
+    margin: 0 0 0 -20px;
+    padding: 70px 80px 70px 0;
+}
+
+.miroir {
+  transform: scaleX(-1);
+  padding: 70px 80px 70px 0;
+
+}

@@ -1,0 +1,83 @@
+@use "variables" as *;
+
+
+header {
+  padding-top: 24px;
+  nav {
+    z-index: 4;
+    position: fixed;
+    width: 100vw;
+    height: 64px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 100%;
+    margin: 0 auto;
+  }
+  li {
+    a {
+      width: 226px;
+      padding: 4px 0 6px 0;
+      text-align: center;
+      background-color: $white-color;
+      border-radius: 14px;
+      height: fit-content;
+      &:hover, &.active {
+        background-color: $secondary-color;
+        color: $white-color;
+      }
+    }
+  }
+  #contact {
+    a {
+      width: 226px;
+      padding: 4px 0 6px 0;
+      text-align: center;
+      background-color: $black-color;
+      border-radius: 14px;
+      color: $primary-color;
+      &:hover, &.active {
+        background-color: $primary-color;
+        color: $black-color;
+      }
+    }
+  }
+  .shift {
+    align-self: flex-end;
+  }
+
+  .NavbarFil {
+    height: 2px;
+    width: 100px;
+    background-color: $black-color;
+    align-self: center;
+    z-index: -1;
+    &:not(#NavbarFil1, #NavbarFil5) {
+      margin: 0 -5px;
+    }
+  }
+
+  #NavbarFil1 {
+    width: 200px;
+    transform: rotate(7deg);
+    margin-right: -5px;
+  }
+
+  #NavbarFil2,
+  #NavbarFil4 {
+    transform: rotate(-13deg);
+  }
+
+  #NavbarFil3 {
+    transform: rotate(13deg);
+  }
+
+  #NavbarFil5 {
+    width: 200px;
+    transform: rotate(7deg);
+    margin-left: -5px;
+  }
+}

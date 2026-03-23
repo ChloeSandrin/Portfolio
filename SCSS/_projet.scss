@@ -1,0 +1,215 @@
+$primary-color: #FED766;
+$secondary-color: #636D86;
+$black-color: #090C08;
+$white-color: #FAFAF5;
+
+
+#sectionProjet {
+    margin-top: 50px;
+    a {
+      margin: auto;
+    }
+}
+
+.projet-img {
+  width: 70%; /* largeur comme tu voulais */
+  height: auto;
+  display: block;
+  margin: 50px auto;
+  cursor: pointer;
+}
+
+//Projet La Pal //
+
+.presentation {
+  width: 80%;
+  margin: 155px auto;
+  .bgJaune {
+    background-color: $primary-color;
+    padding: 5px 20px;
+    transform: rotate(-5.41deg);
+  }
+  img {
+    display: block;
+    padding-top: 50px;
+    margin: auto;
+  }
+  .objectif {
+    color: $white-color;
+    background-color: $black-color;
+    margin-top: 75px;
+    border-radius: 25px;
+    p {
+      margin: 0;
+      padding: 20px 30px;
+      text-align: center;
+
+    }
+  }
+}
+
+.mission {
+  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 500px;
+  margin: -50px auto 0;
+  p {
+    padding: 95px 0 0 55px;
+    margin-bottom: -22px;
+  }
+  ul  {
+    padding-top: 10px;
+    padding-left: 105px;
+  }
+  li {
+    list-style-type: disc;
+    padding: 25px 0 0 1px;
+    width: 480px;
+  }
+}
+
+.contexte {
+  div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+
+    p {
+      width: 400px;
+      padding: 25px;
+      transform: rotate(-5.26deg);
+    }
+  }
+  .bgJaune {
+    position: relative;
+    width: 450px;
+    padding: 25px;
+    margin: -45px 435px 0;
+    z-index: 1;
+  }
+  .fontGrandTexte {
+    color: $white-color;
+    text-align: center;
+  }
+}
+
+.axe {
+  margin: auto;
+  width: 90%;
+  p {
+    color: $white-color;
+    text-align: center;
+  }
+}
+
+.final {
+  img {
+    display: block;
+    margin: 60px auto;
+  }
+  p {
+    color: $white-color;
+    text-align: center;
+    padding: 0 70px;
+  }
+}
+
+.conclusion {
+  img {
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+  }
+  h2 {
+    text-align: center;
+    width: 300px;
+    padding: 10px 0 15px 0;
+    margin: 90px 75px;
+    rotate: calc(-5.41deg);
+  }
+  #avantApres {
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+    div {
+      background-color: $black-color;
+      padding: 25px;
+      border-radius: 25px;
+      width: 570px;
+      .fontGrandTexte {
+        text-align: center;
+      }
+      p {
+        text-align: start;
+      }
+    }
+  }
+}
+
+//Projet CatFee's //
+
+#information {
+  width: 1420px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 620px 85px 735px;
+  grid-template-rows: 740px 300px;
+  #CatfeesPt1 {
+    grid-column: 1;
+    grid-row: 1 /span 2;
+    margin-left: 45px;
+    div { 
+      padding: 15px;
+    }
+    .bgBleu {
+      rotate: calc(-5.26deg);
+      width: 400px;
+      padding: 25px;
+    }
+    .bgJaune {
+      rotate: calc(0.34deg);
+      width: 520px;
+    }
+  }
+  #CatfeesPt2 {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    width: 80%;
+    margin-left: 65px;
+  }
+  #CatfeesPt3 {
+    position: relative;
+    z-index: 1;
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    margin: -50px 0 0 -140px;
+    h2 {
+      a {
+        text-align: center;
+        width: 250px;
+      }
+      box-shadow: 
+      10px 10px 25px rgba($black-color, 0.06),
+      20px 20px 50px rgba($black-color, 0.04);
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 250px;
+      rotate: calc(5.38deg);
+      padding: 10px 12px 12px 10px;
+    }
+    div {
+      width: 760px;
+      padding: 15px;
+      margin: -25px 0 0 10px;
+    }
+  }
+}

@@ -1,0 +1,672 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald/Oswald-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald/Oswald-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald/Oswald-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald/Oswald-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald/Oswald-ExtraLight.woff2) format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../assets/fonts/BebaNeue/BebasNeue-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+li {
+  list-style: none;
+}
+
+h1 {
+  width: 100vw;
+  display: block;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.hero p {
+  width: 40%;
+  margin: 0 auto;
+  color: #FAFAF5;
+  margin-top: 10px;
+  text-align: center;
+}
+.hero a {
+  padding: 8px 20px;
+  text-align: center;
+  background-color: #636D86;
+  color: #FAFAF5;
+  border-radius: 14px;
+  margin: 50px auto 0;
+}
+
+body {
+  background-image: url("../assets/images/Fond nuage 1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  color: #090C08;
+  overflow-x: hidden;
+}
+
+.fontTexte {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.fontProjet {
+  font-family: "Oswald";
+  font-weight: 200;
+  font-size: 70px;
+}
+
+.fontTableauBordBouton {
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.fontProjetTexte {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.fontProjetAnnexe {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.fontTableauBordTitre {
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 64px;
+  color: #636D86;
+}
+
+.fontGrandTexte {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.fontFontNav {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.fontBouton, button {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.fonth2, h2 {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.fontTableauBordTexte {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.fontProjetLabel {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.fontFooterLien {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.fontFormulaireLabel {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #090C08;
+  display: block;
+  width: fit-content;
+}
+
+.bgJaune {
+  background-color: #FED766;
+}
+
+.bgBleu {
+  background-color: #636D86;
+  color: #FAFAF5;
+}
+
+.avion {
+  margin: 0 0 0 -20px;
+  padding: 70px 80px 70px 0;
+}
+
+.miroir {
+  transform: scaleX(-1);
+  padding: 70px 80px 70px 0;
+}
+
+header {
+  padding-top: 24px;
+}
+header nav {
+  z-index: 4;
+  position: fixed;
+  width: 100vw;
+  height: 64px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  height: 100%;
+  margin: 0 auto;
+}
+header li a {
+  width: 226px;
+  padding: 4px 0 6px 0;
+  text-align: center;
+  background-color: #FAFAF5;
+  border-radius: 14px;
+  height: fit-content;
+}
+header li a:hover, header li a.active {
+  background-color: #636D86;
+  color: #FAFAF5;
+}
+header #contact a {
+  width: 226px;
+  padding: 4px 0 6px 0;
+  text-align: center;
+  background-color: #090C08;
+  border-radius: 14px;
+  color: #FED766;
+}
+header #contact a:hover, header #contact a.active {
+  background-color: #FED766;
+  color: #090C08;
+}
+header .shift {
+  align-self: flex-end;
+}
+header .NavbarFil {
+  height: 2px;
+  width: 100px;
+  background-color: #090C08;
+  align-self: center;
+  z-index: -1;
+}
+header .NavbarFil:not(#NavbarFil1, #NavbarFil5) {
+  margin: 0 -5px;
+}
+header #NavbarFil1 {
+  width: 200px;
+  transform: rotate(7deg);
+  margin-right: -5px;
+}
+header #NavbarFil2,
+header #NavbarFil4 {
+  transform: rotate(-13deg);
+}
+header #NavbarFil3 {
+  transform: rotate(13deg);
+}
+header #NavbarFil5 {
+  width: 200px;
+  transform: rotate(7deg);
+  margin-left: -5px;
+}
+
+#aPropos {
+  width: 1100px;
+  display: grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 180px 180px 160px 180px;
+  margin: 0 auto 0;
+}
+#aPropos #ProposBloc1 {
+  width: 500px;
+  padding: 20px;
+  grid-column: 1;
+  grid-row: 1;
+  transform: rotate(-5.41deg);
+  margin-left: 250px;
+}
+#aPropos #ProposBloc2 {
+  width: 500px;
+  height: 110px;
+  padding: 20px;
+  grid-column: 1;
+  grid-row: 2;
+  transform: rotate(9.21deg);
+  position: relative;
+  z-index: 1;
+  margin: -10px auto;
+}
+#aPropos img {
+  grid-column: 2;
+  grid-row: 1/span 2;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  margin-left: 60px;
+  width: 80%;
+}
+#aPropos #ProposBloc3 {
+  width: 100%;
+  height: 75px;
+  padding: 20px;
+  grid-column: 1/span 2;
+  grid-row: 3;
+  transform: rotate(-5.41deg);
+  position: relative;
+  z-index: 2;
+  margin-top: -55px;
+}
+#aPropos .fontGrandTexte {
+  grid-column: 1/span 2;
+  grid-row: 4;
+  margin: 0 -20px 0 -20px;
+  color: #FAFAF5;
+}
+
+.tableauboardFond {
+  display: none;
+}
+
+#tableauboard {
+  display: block;
+}
+
+#competence {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 510px;
+}
+
+.tableauboardFond {
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 70px;
+  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 900px;
+  display: flex;
+}
+
+#illustratorTableau {
+  margin-left: 70px;
+}
+#illustratorTableau img {
+  width: 15%;
+  margin-bottom: 200px;
+}
+#illustratorTableau div {
+  width: 70%;
+  margin: 50px 0 0 50px;
+}
+
+#figmaTableau {
+  margin-left: 70px;
+}
+#figmaTableau #pMaquette {
+  width: 120%;
+  margin: 50px 0 0 50px;
+}
+#figmaTableau #imgMaquette {
+  padding-top: 200px;
+  padding-left: 40px;
+  width: 100%;
+}
+
+#photoshopTableau {
+  margin-left: 70px;
+}
+#photoshopTableau img {
+  width: 25%;
+  height: 15%;
+  margin-bottom: 200px;
+  margin-top: 300px;
+}
+#photoshopTableau div {
+  width: 60%;
+  margin: 50px 0 0 50px;
+}
+
+#vscodeTableau {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#vscodeTableau p {
+  width: 90%;
+  margin-top: 100px;
+  line-height: 1.5;
+}
+
+#indesignTableau {
+  margin-left: 70px;
+}
+#indesignTableau img {
+  width: 25%;
+  height: 35%;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+#indesignTableau div {
+  width: 60%;
+  margin: 50px 0 0 50px;
+}
+
+.tableauboardFond1 {
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 70px;
+  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 600px;
+}
+
+#tableauboard p {
+  text-align: center;
+  padding-top: 100px;
+}
+#tableauboard h3 {
+  background-image: url(../assets/images/surligne.png);
+  background-repeat: no-repeat;
+  background-position-x: 220px;
+  background-position-y: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#tableaugauche {
+  width: 800px;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 70px;
+}
+#tableaugauche ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -100px;
+}
+#tableaugauche ul img {
+  width: 80%;
+}
+
+#photoshop, #indesign {
+  margin-left: -65px;
+}
+
+#vscode, #figma {
+  margin-left: -65px;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+#tableaudroit {
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #FAFAF5;
+  border-right: 1px solid #FAFAF5;
+  height: 400px;
+  width: 480px;
+}
+#tableaudroit p {
+  padding: 20px 40px;
+  margin-bottom: -10px;
+  width: 450px;
+}
+#tableaudroit .bg-bleu {
+  position: relative;
+  background-color: #636D86;
+  color: #FAFAF5;
+  transform: rotate(-5.26deg);
+  z-index: 2;
+}
+#tableaudroit .bg-yellow {
+  background-color: #FED766;
+  transform: rotate(0.34deg);
+}
+
+#tableaugauche li {
+  cursor: pointer;
+}
+
+#tableaugauche li img {
+  transition: transform 0.3s ease;
+}
+
+#tableaugauche li:hover img {
+  transform: scale(1.2);
+}
+
+#tableaugauche li {
+  position: relative;
+  cursor: pointer;
+}
+
+#tableaugauche li:hover {
+  z-index: 10;
+}
+
+#sectionProjet {
+  margin-top: 50px;
+}
+#sectionProjet a {
+  margin: auto;
+}
+
+.projet-img {
+  width: 70%; /* largeur comme tu voulais */
+  height: auto;
+  display: block;
+  margin: 50px auto;
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-family: "Poppins";
+  padding: 10px 0 0 10px;
+}
+
+textarea {
+  font-family: "Poppins";
+  color: grey;
+}
+
+#linkedin {
+  padding: 45px 0;
+  margin: 70px;
+  border-radius: 25px;
+  background-color: #090C08;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+#linkedin a {
+  color: #FAFAF5;
+}
+#linkedin img {
+  width: 4%;
+  height: 4%;
+}
+
+#form h2 {
+  text-align: center;
+  width: 300px;
+  padding: 10px 0 15px 0;
+  margin: 70px auto;
+  rotate: -5.41deg;
+}
+#form form {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+#form form .Divlabel {
+  display: flex;
+  flex-direction: column;
+  color: #FAFAF5;
+}
+#form form label {
+  margin-bottom: 10px;
+  color: #FAFAF5;
+  background-color: #636D86;
+  width: 100px;
+  text-align: center;
+  padding: 2px 0;
+  rotate: -5.41deg;
+}
+#form form input {
+  border: none;
+  border-radius: 15px;
+  width: 430px;
+  height: 70px;
+}
+#form form textarea {
+  width: 430px;
+  height: 217px;
+  border-radius: 15px;
+  padding: 20px 0 0 20px;
+}
+#form form div div {
+  margin-bottom: 40px;
+}
+
+#buttonEnvoyer {
+  text-align: center;
+  width: 150px;
+  padding: 5px 0 10px 0;
+  margin: 70px auto;
+  rotate: -5.41deg;
+  border: none;
+  margin-left: 1080px;
+}
+#buttonEnvoyer:hover {
+  background-color: #090C08;
+  color: #FED766;
+  cursor: pointer;
+  transition: 1ms;
+}
+
+footer a {
+  color: #FAFAF5;
+  padding-bottom: 15px;
+  text-decoration: underline;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #636D86;
+}
+footer {
+  color: #FAFAF5;
+  display: flex;
+  background-color: #090C08;
+  padding: 95px 0 105px 0;
+}
+footer button {
+  border: none;
+  padding: 5px 10px;
+  margin-left: 25px;
+  rotate: -5.41deg;
+}
+
+#ContactFooter {
+  padding-right: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ContactFooter #linkLogo {
+  width: 22%;
+  margin-top: 15px;
+  margin-left: 205px;
+}
+#ContactFooter #avionFooter {
+  margin-left: -25px;
+}
+
+#navFooter {
+  padding-right: 200px;
+}
+
+/*# sourceMappingURL=style.scss.map */

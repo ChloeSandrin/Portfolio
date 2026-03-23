@@ -1,0 +1,95 @@
+$primary-color: #FED766;
+$secondary-color: #636D86;
+$black-color: #090C08;
+$white-color: #FAFAF5;
+
+input::placeholder {
+    font-family: "Poppins";
+}
+
+textarea {
+    font-family: "Poppins";
+}
+
+
+
+#linkedin {
+    padding: 45px 0;
+    margin: 70px;
+    border-radius: 25px;
+    background-color: $black-color;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    a {
+        color: $white-color;
+    }
+    img {
+        width: 4%;
+        height: 4%;
+    }
+}
+
+#form {
+    h2 {
+        text-align: center;
+        width: 300px;
+        padding: 10px 0 15px 0;
+        margin: 70px auto;
+        rotate: calc(-5.41deg);
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        .Divlabel {
+            display: flex;
+            flex-direction: column;
+            color: $white-color;
+        }
+        label {
+            margin-bottom: 10px;
+            color: $white-color;
+            background-color: $secondary-color;
+            width: 100px;
+            text-align: center;
+            padding: 2px 0;
+            rotate: calc(-5.41deg);
+
+        }
+        input {
+            border: none;
+            border-radius: 15px;
+            width: 430px;
+            height: 70px;
+            padding-left: 20px;
+        }
+        textarea {
+            width: 430px;
+            height: 217px;
+            border-radius: 15px;
+            padding: 20px 0 0 20px;
+        }
+        div div {
+            margin-bottom: 40px;
+        }
+        
+    }
+}
+
+#buttonEnvoyer {
+        text-align: center;
+        width: 150px;
+        padding: 5px 0 10px 0;
+        margin: 70px auto;
+        rotate: calc(-5.41deg);
+        border: none;
+        margin-left: 1080px;
+        &:hover {
+            background-color: $black-color;
+            color: $primary-color;
+            cursor: pointer;
+            transition: 1ms;
+        }
+}

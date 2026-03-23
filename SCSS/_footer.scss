@@ -1,0 +1,58 @@
+$primary-color: #FED766;
+$secondary-color: #636D86;
+$black-color: #090C08;
+$white-color: #FAFAF5;
+$Bold: 700;
+
+footer {
+    a {
+        color: $white-color;
+        padding-bottom: 15px;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+    }
+    color: $white-color;
+    display: flex;
+    background-color: $black-color;
+    padding: 95px 0 105px 0;
+    .bgBleu {
+        border: none;
+        padding: 5px 10px;
+        margin-left: 25px;
+        rotate: calc(-5.41deg);
+        text-decoration: none;
+        font-family: "Oswald";
+        font-weight: $Bold;
+        font-size: 24px;
+        &:hover {
+            text-decoration: underline;
+            color: $white-color;
+            font-family: "Oswald";
+            font-weight: $Bold;
+            font-size: 24px;
+        }
+    }
+}
+
+#ContactFooter {
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #linkLogo {
+        width: 22%;
+        margin-top: 15px;
+        margin-left: 205px;
+    }
+    #avionFooter {
+        margin-left: -25px;
+    }
+}
+
+#navFooter {
+    padding-right: 200px;
+}
