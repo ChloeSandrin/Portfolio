@@ -103,7 +103,7 @@ document.getElementById("formFormulaire").addEventListener("submit",function(eve
     event.preventDefault();
 
     grecaptcha.ready(function() {
-      grecaptcha.execute("6Lej8ZQsAAAAABdASrS1k_hthXu2NV2UIi3KGZPx", {action: "submit"}).then(function(token) {
+      grecaptcha.execute("6Lej8ZQsAAAAABdASrS1k_hthXu2NV2UIi3KGZPx", {action: "formspree"}).then(function(token) {
 
         const input = document.createElement("input");
         input.type = "hidden";
