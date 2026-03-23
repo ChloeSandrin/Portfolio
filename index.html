@@ -139,18 +139,19 @@
           <div>
             <div class="Divlabel">
               <label for="nom" class="fontFormulaireLabel bgBleu">Nom<span>*</span></label>
-              <input type="text" id="nom" placeholder="Ex : Pedro" required>
+              <input type="text" id="nom" name="name" placeholder="Ex : Pedro" required>
             </div>
             <div class="Divlabel">
               <label for="mail" class="fontFormulaireLabel bgBleu">Mail<span>*</span></label>
-              <input type="mail" id="mail" placeholder="Ex : pedro.pascal@exemple.com" required>
+              <input type="mail" id="mail" name="email" placeholder="Ex : pedro.pascal@exemple.com" required>
             </div>
           </div>
           <div class="Divlabel">
             <label for="message" class="fontFormulaireLabel bgBleu">Message</label>
-            <textarea name="message" id="message" placeholder="Entrez votre message ici..."></textarea>
+            <textarea name="message" id="message" name="message" placeholder="Entrez votre message ici..."></textarea>
           </div>
           </div>
+          <input type="text" name="website" style="display: none;" tabindex="-1" autocomplete="off">
           <button type="submit" class="bgJaune" id="buttonEnvoyer">Envoyer</button>
         </form>
       </div>
