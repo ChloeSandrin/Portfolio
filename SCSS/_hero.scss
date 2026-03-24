@@ -2,10 +2,22 @@
 
 h1 {
     width: 100vw;
-    display: block;
     margin-top: 150px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* centre verticalement si besoin */
+    flex-direction: column; /* important pour mobile */
+}
 
+.desktop { 
+    display: block; 
+    max-width: 1400px; 
+    width: 100%; 
+    height: auto; 
+}
+
+.mobile { 
+    display: none; 
 }
 
 .hero {
@@ -24,4 +36,23 @@ h1 {
         border-radius: 14px;
         margin: 50px auto 0;
     }
+}
+
+
+
+
+@media (max-width: 480px) {
+  img.desktop { display: none !important; }
+  img.mobile  { 
+    display: block !important;
+    width: 90vw;    /* prend presque toute la largeur du téléphone */
+    max-width: none !important; /* supprime toute limite héritée */
+    height: auto;
+    margin: -70px auto 0 ;             /* centre horizontalement */
+  }
+  .hero {
+    p {
+        width: 80%;
+    }
+  }
 }

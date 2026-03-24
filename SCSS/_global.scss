@@ -1,9 +1,25 @@
 @use "variables" as *;
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
-    background-image: url("../assets/images/Fond nuage 1.png");
+    font-family: "Poppins";
+    font-weight: 400; /* ou ton $Regular */
+    font-size: 18px;
+    color: #000; /* ou ton $black-color */
+  
+    background-image: url("assets/images/Fond nuage 1.png");
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* fond fixe desktop */
     margin: 0;
     padding: 0;
     font-family: "Poppins";
@@ -11,6 +27,10 @@ body {
     font-size: 18px;
     color: $black-color;
     overflow-x: hidden;
+}
+
+.bg-fixed {
+  display: none;
 }
 
 .fontTexte {
@@ -116,7 +136,15 @@ a {
     color: $white-color;
 }
 
+.avion.desktop {
+  display: block;        /* visible sur desktop */
+  margin: 0;             /* ajuste si besoin */
+  width: auto;           /* taille réelle */
+}
 
+.avion.mobile {
+  display: none;         /* cachée sur desktop */
+}
 
 .avion {
     margin: 0 0 0 -20px;
@@ -127,4 +155,48 @@ a {
   transform: scaleX(-1);
   padding: 70px 80px 70px 0;
 
+}
+
+
+
+
+/* Mobile : certains navigateurs iOS ne supportent pas fixed */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* fond scrollable */
+    height: auto;
+    background: none; /* supprime le background body */                  /* laisse le body s’adapter au contenu */
+  }
+  .bg-fixed {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/images/Fond nuage 1.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* derrière tout le contenu */
+  }
+  .avion {
+    margin: 0 -350px;             /* supprime le décalage gauche */
+    padding: 20px 0 20px 0; /* réduit le padding pour mobile */
+    width: auto;  
+  }
+  .avion.desktop {
+    display: none !important;  /* on cache l'image desktop */
+  }
+
+  .avion.mobile {
+    display: block !important; /* on affiche l'image mobile */
+    margin: 20px 0 0 0;                 /* ajuste la position si besoin */
+    width: 70%;               /* taille que tu as définie pour mobile */
+  }
+  .miroir {
+    width: 70%;           /* taille que tu veux */    /* pousse l’image vers la droite */
+    display: block;         /* taille que tu veux */
+    margin-left: auto !important;     /* pousse l’image vers la droite */
+    padding-right: 0; 
+  }
 }

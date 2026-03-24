@@ -1,60 +1,61 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Oswald";
-  src: url(assets/fonts/Oswald/Oswald-Bold.woff2) format("woff2");
+  src: url(../assets/fonts/Oswald/Oswald-Bold.woff2) format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
+  src: url(../assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(assets/fonts/Oswald/Oswald-Medium.woff2) format("woff2");
+  src: url(../assets/fonts/Oswald/Oswald-Medium.woff2) format("woff2");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(assets/fonts/Oswald/Oswald-Regular.woff2) format("woff2");
+  src: url(../assets/fonts/Oswald/Oswald-Regular.woff2) format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(assets/fonts/Oswald/Oswald-Light.woff2) format("woff2");
+  src: url(../assets/fonts/Oswald/Oswald-Light.woff2) format("woff2");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url(assets/fonts/Oswald/Oswald-ExtraLight.woff2) format("woff2");
+  src: url(../assets/fonts/Oswald/Oswald-ExtraLight.woff2) format("woff2");
   font-weight: 200;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(assets/fonts/Poppins/Poppins-Bold.woff2) format("woff2");
+  src: url(../assets/fonts/Poppins/Poppins-Bold.woff2) format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(assets/fonts/Poppins/Poppins-Regular.woff2) format("woff2");
+  src: url(../assets/fonts/Poppins/Poppins-Regular.woff2) format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(assets/fonts/Poppins/Poppins-Light.woff2) format("woff2");
+  src: url(../assets/fonts/Poppins/Poppins-Light.woff2) format("woff2");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: url(assets/fonts/BebaNeue/BebasNeue-Regular.woff2) format("woff2");
+  src: url(../assets/fonts/BebaNeue/BebasNeue-Regular.woff2) format("woff2");
   font-weight: 400;
   font-display: swap;
 }
@@ -64,9 +65,22 @@ li {
 
 h1 {
   width: 100vw;
-  display: block;
   margin-top: 150px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centre verticalement si besoin */
+  flex-direction: column; /* important pour mobile */
+}
+
+.desktop {
+  display: block;
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
+}
+
+.mobile {
+  display: none;
 }
 
 .hero p {
@@ -85,10 +99,40 @@ h1 {
   margin: 50px auto 0;
 }
 
+@media (max-width: 480px) {
+  img.desktop {
+    display: none !important;
+  }
+  img.mobile {
+    display: block !important;
+    width: 90vw; /* prend presque toute la largeur du téléphone */
+    max-width: none !important; /* supprime toute limite héritée */
+    height: auto;
+    margin: -70px auto 0; /* centre horizontalement */
+  }
+  .hero p {
+    width: 80%;
+  }
+}
+html, body {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
+  font-family: "Poppins";
+  font-weight: 400; /* ou ton $Regular */
+  font-size: 18px;
+  color: #000; /* ou ton $black-color */
   background-image: url("assets/images/Fond nuage 1.png");
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* fond fixe desktop */
   margin: 0;
   padding: 0;
   font-family: "Poppins";
@@ -96,6 +140,10 @@ body {
   font-size: 18px;
   color: #090C08;
   overflow-x: hidden;
+}
+
+.bg-fixed {
+  display: none;
 }
 
 .fontTexte {
@@ -201,6 +249,16 @@ a {
   color: #FAFAF5;
 }
 
+.avion.desktop {
+  display: block; /* visible sur desktop */
+  margin: 0; /* ajuste si besoin */
+  width: auto; /* taille réelle */
+}
+
+.avion.mobile {
+  display: none; /* cachée sur desktop */
+}
+
 .avion {
   margin: 0 0 0 -20px;
   padding: 70px 80px 70px 0;
@@ -211,6 +269,45 @@ a {
   padding: 70px 80px 70px 0;
 }
 
+/* Mobile : certains navigateurs iOS ne supportent pas fixed */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* fond scrollable */
+    height: auto;
+    background: none; /* supprime le background body */ /* laisse le body s’adapter au contenu */
+  }
+  .bg-fixed {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/images/Fond nuage 1.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* derrière tout le contenu */
+  }
+  .avion {
+    margin: 0 -350px; /* supprime le décalage gauche */
+    padding: 20px 0 20px 0; /* réduit le padding pour mobile */
+    width: auto;
+  }
+  .avion.desktop {
+    display: none !important; /* on cache l'image desktop */
+  }
+  .avion.mobile {
+    display: block !important; /* on affiche l'image mobile */
+    margin: 20px 0 0 0; /* ajuste la position si besoin */
+    width: 70%; /* taille que tu as définie pour mobile */
+  }
+  .miroir {
+    width: 70%; /* taille que tu veux */ /* pousse l’image vers la droite */
+    display: block; /* taille que tu veux */
+    margin-left: auto !important; /* pousse l’image vers la droite */
+    padding-right: 0;
+  }
+}
 header {
   padding-top: 24px;
 }
@@ -283,6 +380,11 @@ header #NavbarFil5 {
   margin-left: -5px;
 }
 
+@media (max-width: 480px) {
+  #navDesktop {
+    display: none;
+  }
+}
 #aPropos {
   width: 1100px;
   display: grid;
@@ -354,7 +456,7 @@ header #NavbarFil5 {
   grid-column: 1;
   grid-row: 2;
   margin-left: 70px;
-  background-image: url(assets/images/Tableau\ de\ bord.png);
+  background-image: url(../assets/images/Tableau\ de\ bord.png);
   background-repeat: no-repeat;
   width: 800px;
   height: 900px;
@@ -430,7 +532,7 @@ header #NavbarFil5 {
   grid-column: 1;
   grid-row: 2;
   margin-left: 70px;
-  background-image: url(assets/images/Tableau\ de\ bord.png);
+  background-image: url(../assets/images/Tableau\ de\ bord.png);
   background-repeat: no-repeat;
   width: 800px;
   height: 600px;
@@ -441,7 +543,7 @@ header #NavbarFil5 {
   padding-top: 100px;
 }
 #tableauboard h3 {
-  background-image: url(assets/images/surligne.png);
+  background-image: url(../assets/images/surligne.png);
   background-repeat: no-repeat;
   background-position-x: 220px;
   background-position-y: 50px;
@@ -568,7 +670,7 @@ header #NavbarFil5 {
 }
 
 .mission {
-  background-image: url(assets/images/Tableau\ de\ bord.png);
+  background-image: url(../assets/images/Tableau\ de\ bord.png);
   background-repeat: no-repeat;
   width: 800px;
   height: 500px;
@@ -858,10 +960,6 @@ footer .bgBleu:hover {
 
 #navFooter {
   padding-right: 200px;
-}
-
-label span {
-  color: rgb(255, 149, 149);
 }
 
 /*# sourceMappingURL=style.css.map */

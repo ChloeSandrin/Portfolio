@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Porfolio Chloé Sandrin</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="/iconOpengraph/favicon-96x96.png" sizes="96x96" />
@@ -30,7 +30,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav id="navDesktop">
       <ul>
         <div aria-hidden="true" class="NavbarFil" id="NavbarFil1"></div>
         <li class="fontFontNav shift">
@@ -52,13 +52,20 @@
       </ul>
     </nav>
   </header>
+  <div class="bg-fixed"></div> 
   <main>
     <section class="hero" id="hero">
       <!-- mon nom -->
-      <h1><img src="assets/images/mon nom.svg" alt="Chloé Sandrin"></h1>
+      <h1 class="titre">
+        <img class="desktop" src="assets/images/mon nom.svg" alt="Chloé Sandrin">
+        <img class="mobile"  src="assets/images/monNomMobile.png" alt="Chloé Sandrin">
+      </h1>
       <p class="fontGrandTexte">Là où mes idées prennent forme et gagnent en altitude.</p>
       <a href="assets/cv-chloe-sandrin.pdf" download class="fontBouton">Décoller vers mon CV</a>
-      <img class="avion" src="assets/images/AvionDroite.png" alt="Petit avion jaune" id="P1">
+      <div class="avion-container">
+        <img class="avion mobile" src="assets/images/AvionMobile.png" alt="Petit avion jaune mobile">
+        <img class="avion desktop" src="assets/images/AvionDroite.png" alt="Petit avion jaune desktop" id="P1">
+      </div>
     </section>
     <section id="aPropos">
       <p class="bgJaune" id="ProposBloc1">Depuis toujours, la créativité fait partie de mon quotidien. Des premiers
@@ -71,8 +78,10 @@
         vécues m’ont permis de développer le travail d’équipe, l’adaptabilité et le sens du contact.</p>
       <p class="fontGrandTexte">Créer, apprendre et expérimenter restent au cœur de mon parcours.</p>
     </section>
-    <img class="avion miroir" src="assets/images/AvionDroite.png" alt="Petit avion jaune" id="P2">
-
+    <div class="avion-container">
+      <img class="avion mobile miroir" src="assets/images/AvionMobile.png" alt="Petit avion jaune mobile">
+      <img class="avion desktop miroir" src="assets/images/AvionDroite.png" alt="Petit avion jaune desktop" id="P2">
+    </div>
     <section id="competence">
       <div id="tableaugauche">
         <ul>
@@ -150,7 +159,10 @@
         <p class="bg-yellow">Montage vidéo :<br>Raconter une histoire à travers le rythme et l’image.</p>
       </div>
     </section>
-    <img class="avion" src="assets/images/AvionDroite.png" alt="Petit avion jaune" id="P3">
+    <div class="avion-container">
+        <img class="avion mobile" src="assets/images/AvionMobile.png" alt="Petit avion jaune mobile">
+        <img class="avion desktop" src="assets/images/AvionDroite.png" alt="Petit avion jaune desktop" id="P1">
+      </div>
 
     <section id="sectionProjet">
       <a href="palProjet.html"><img src="assets/images/Projet/Tf Pal.png" alt="Tf Pal" class="projet-img"
@@ -158,7 +170,10 @@
       <a href="catfees.html"><img src="assets/images/Projet/Tf Catfeez.png" alt="Tf Catfeez" class="projet-img"
           data-hover="assets/images/Projet/To Catfeez.png"></a>
     </section>
-    <img class="avion miroir" src="assets/images/AvionDroite.png" alt="Petit avion jaune" id="P4">
+    <div class="avion-container">
+        <img class="avion mobile miroir" src="assets/images/AvionMobile.png" alt="Petit avion jaune mobile">
+        <img class="avion desktop miroir" src="assets/images/AvionDroite.png" alt="Petit avion jaune desktop" id="P4">
+      </div>
     <section id="formContact">
       <div id="linkedin">
         <img src="assets/images/Linkedin Logo.png" alt="Linkedin Logo">
@@ -187,7 +202,10 @@
       </form>
       </div>
     </section>
-    <img class="avion" src="assets/images/AvionDroite.png" alt="Petit avion jaune">
+    <div class="avion-container">
+        <img class="avion mobile" src="assets/images/AvionMobile.png" alt="Petit avion jaune mobile">
+        <img class="avion desktop" src="assets/images/AvionDroite.png" alt="Petit avion jaune desktop">
+      </div>
   </main>
   <footer>
     <div id="ContactFooter">
