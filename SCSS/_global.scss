@@ -165,7 +165,8 @@ a {
   body {
     background-attachment: scroll; /* fond scrollable */
     height: auto;
-    background: none; /* supprime le background body */                  /* laisse le body s’adapter au contenu */
+    background: none; /* supprime le background body */ 
+    font-size: 14px;
   }
   .bg-fixed {
     display: block;

@@ -19,6 +19,12 @@ $white-color: #FAFAF5;
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .projet-img {
+    width: 80%;
+  }
+}
+
 //Projet La Pal //
 
 .presentation {

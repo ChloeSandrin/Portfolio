@@ -4,18 +4,18 @@ $black-color: #090C08;
 $white-color: #FAFAF5;
 
 .tableauboardFond {
-  display: none;
+    display: none;
 }
 
 #tableauboard {
-  display: block;
+    display: block;
 }
 
 #competence {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px 510px;
-    
+
 }
 
 .tableauboardFond {
@@ -27,15 +27,17 @@ $white-color: #FAFAF5;
     width: 800px;
     height: 900px;
     display: flex;
-    
+
 }
 
 #illustratorTableau {
     margin-left: 70px;
+
     img {
         width: 15%;
         margin-bottom: 200px;
     }
+
     div {
         width: 70%;
         margin: 50px 0 0 50px;
@@ -44,10 +46,12 @@ $white-color: #FAFAF5;
 
 #figmaTableau {
     margin-left: 70px;
+
     #pMaquette {
         width: 120%;
         margin: 50px 0 0 50px;
     }
+
     #imgMaquette {
         padding-top: 200px;
         padding-left: 40px;
@@ -57,12 +61,14 @@ $white-color: #FAFAF5;
 
 #photoshopTableau {
     margin-left: 70px;
-   img {
+
+    img {
         width: 25%;
         height: 15%;
         margin-bottom: 200px;
         margin-top: 300px;
     }
+
     div {
         width: 60%;
         margin: 50px 0 0 50px;
@@ -71,24 +77,27 @@ $white-color: #FAFAF5;
 
 #vscodeTableau {
     margin-left: 70px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   p {
-    width: 90%;
-    margin-top: 100px;
-    line-height: 1.5;
-   }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        width: 90%;
+        margin-top: 100px;
+        line-height: 1.5;
+    }
 }
 
 #indesignTableau {
     margin-left: 70px;
-   img {
+
+    img {
         width: 25%;
         height: 35%;
         margin-bottom: 100px;
         margin-top: 150px;
     }
+
     div {
         width: 60%;
         margin: 50px 0 0 50px;
@@ -108,12 +117,13 @@ $white-color: #FAFAF5;
 
 
 #tableauboard {
-    
+
 
     p {
         text-align: center;
         padding-top: 100px;
     }
+
     h3 {
         background-image: url(../assets/images/surligne.png);
         background-repeat: no-repeat;
@@ -127,28 +137,31 @@ $white-color: #FAFAF5;
 
 
 #tableaugauche {
-            width: 800px;
-            grid-column: 1;
-            grid-row: 1;
-            margin-left: 70px;
+    width: 800px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 70px;
 
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-bottom: -100px;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: -100px;
+
         img {
             width: 80%;
         }
-     }
     }
-    
+}
 
-#photoshop, #indesign  {
+
+#photoshop,
+#indesign {
     margin-left: -65px;
 }
 
-#vscode, #figma {
+#vscode,
+#figma {
     margin-left: -65px;
     margin-top: 50px;
     z-index: 1;
@@ -166,44 +179,256 @@ $white-color: #FAFAF5;
     border-right: 1px solid $white-color;
     height: 400px;
     width: 480px;
+
     p {
         padding: 20px 40px;
         margin-bottom: -10px;
         width: 450px;
     }
+
     .bg-bleu {
+        position: relative;
+        background-color: $secondary-color;
+        color: $white-color;
+        transform: rotate(-5.26deg);
+        z-index: 2;
+    }
+
+    .bg-yellow {
+        background-color: $primary-color;
+        transform: rotate(0.34deg);
+    }
+
+
+}
+
+#tableaugauche li {
+    cursor: pointer;
+
+}
+
+#tableaugauche li img {
+    transition: transform 0.3s ease;
+}
+
+#tableaugauche li:hover img {
+    transform: scale(1.2);
+}
+
+#tableaugauche li {
+    position: relative;
+    cursor: pointer;
+}
+
+#tableaugauche li:hover {
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    #competence {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tableauboardFond {
+        margin: 0;
+        background-image: url(../assets/images/TableaudeBordMobile.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: top center;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .tableauboardFond1 {
+        margin: 0 0 180px 0;
+        background-image: url(../assets/images/TableaudeBordMobile.png);
+        background-repeat: no-repeat;
+        background-size: 100% 80%;
+        background-position: top center;
+        width: 100%;
+        padding: 0 0 100px 0;
+
+        p {
+            font-size: 40px;
+            margin: 50px 0 0 0;
+            text-align: center;
+            padding: 0 20px;
+        }
+    }
+
+    #tableauboard h3 {
+        font-size: 23px;
+        background-image: none
+    }
+
+    ;
+
+    #tableaugauche {
+        width: 100%;
+        margin: 0;
+        margin-bottom: -60px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 0;
+            padding: 0;
+            margin-top: -25px;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+
+    #illustratorTableau {
+        margin: 0;
+        flex-direction: column;
+        background-size: 100% 65%;
+
+        img {
+            width: 35%;
+            margin: 10px auto 0;
+
+        }
+
+        div {
+            width: 70%;
+            margin: 100px 0 0 50px;
+        }
+    }
+
+    #figmaTableau {
+        margin: 0;
+        flex-direction: column;
+        background-size: 100% 65%;
+
+        #pMaquette {
+            width: 80%;
+            margin: 100px 0 0 50px;
+        }
+
+        #imgMaquette {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    #photoshopTableau {
+        margin: 0;
+        flex-direction: column;
+        background-size: 100% 65%;
+
+        img {
+            width: 80%;
+            height: auto;
+            margin: 25px auto;
+        }
+
+        div {
+            width: 80%;
+            margin: 100px 0 0 50px;
+        }
+    }
+
+    #vscodeTableau {
+        margin: 0;
+        background-size: 100% 65%;
+
+        p {
+            width: 90%;
+            margin-top: 100px;
+            line-height: 1.5;
+        }
+
+        #devLogo {
+            display: grid;
+            grid-template-columns: 137px auto 137px;
+            grid-template-rows: auto auto;
+
+            #html {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            #css {
+                grid-column: 2;
+                grid-row: 1;
+                margin: auto;
+            }
+
+            #js {
+                grid-column: 3;
+                grid-row: 1;
+                margin: auto;
+            }
+
+            #sass {
+                grid-column: 2;
+                grid-row: 2;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    #indesignTableau {
+        margin: 0;
+        flex-direction: column;
+        background-size: 100% 65%;
+
+        img {
+            width: 35%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        div {
+            width: 80%;
+            margin: 100px 0 0 50px;
+        }
+    }
+
+
+    #tableaudroit {
+        margin: -200px auto;
+        height: 300px;
+        width: 80%;
+
+        p {
+            padding: 20px 40px;
+            margin-bottom: -10px;
+            width: 80%;
+        }
+
+        .bg-bleu {
             position: relative;
             background-color: $secondary-color;
             color: $white-color;
             transform: rotate(-5.26deg);
             z-index: 2;
         }
-    .bg-yellow {
+
+        .bg-yellow {
             background-color: $primary-color;
             transform: rotate(0.34deg);
         }
 
-    
-}
+    }
 
-#tableaugauche li {
-  cursor: pointer;
-  
-}
-
-#tableaugauche li img {
-  transition: transform 0.3s ease;
-}
-
-#tableaugauche li:hover img {
-  transform: scale(1.2);
-}
-
-#tableaugauche li {
-  position: relative;
-  cursor: pointer;
-}
-
-#tableaugauche li:hover {
-  z-index: 10;
+    .marginTop {
+        margin-top: 300px;
+    }
 }
