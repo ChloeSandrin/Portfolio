@@ -1140,6 +1140,61 @@ textarea {
   transition: 1ms;
 }
 
+@media (max-width: 480px) {
+  #linkedin {
+    padding: 25px 10px;
+    margin: 50px 25px;
+    border-radius: 25px;
+    background-color: #090C08;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  #linkedin a {
+    color: #FAFAF5;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  #linkedin img {
+    width: 15%;
+    height: 15%;
+  }
+  #form form {
+    flex-direction: column;
+    padding: 0 25px;
+    gap: 10px;
+  }
+  #form form input, #form form textarea {
+    width: auto;
+  }
+  #form .bgJaune {
+    font-size: 20px;
+  }
+  #form h2 {
+    text-align: center;
+    width: 50%;
+    padding: 10px 0 15px 0;
+    margin: 70px auto;
+    rotate: -5.41deg;
+  }
+  #buttonEnvoyer {
+    text-align: center;
+    width: 50%;
+    padding: 10px 0 15px 0;
+    margin-left: 40%;
+    rotate: -5.41deg;
+    border: none;
+    font-size: 20px;
+  }
+  #buttonEnvoyer:hover {
+    background-color: #090C08;
+    color: #FED766;
+    cursor: pointer;
+    transition: 1ms;
+  }
+}
 footer a {
   color: #FAFAF5;
   padding-bottom: 15px;
@@ -1191,6 +1246,50 @@ footer .bgBleu:hover {
 
 #navFooter {
   padding-right: 200px;
+}
+
+@media (max-width: 480px) {
+  footer #ContactFooter {
+    padding: 0;
+  }
+  footer #ContactFooter #linkLogo {
+    display: block;
+    margin: 25px auto 100%;
+    width: 90%;
+  }
+  footer .bgBleu {
+    margin: 0;
+  }
+  footer #ContactFooter #avionFooter {
+    width: 80%;
+    margin-left: -150px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 0 0 0;
+  }
+  footer #cv {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px 0;
+    margin: 0;
+  }
+  footer #navFooter, footer #listeProjet {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  footer #navFooter ul, footer #listeProjet ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  footer #navFooter ul li, footer #listeProjet ul li {
+    width: fit-content;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
