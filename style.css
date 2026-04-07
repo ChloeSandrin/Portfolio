@@ -98,6 +98,10 @@ h1 {
   border-radius: 14px;
   margin: 50px auto 0;
 }
+.hero .fontBouton:hover {
+  color: #636D86;
+  background-color: #FAFAF5;
+}
 
 @media (max-width: 480px) {
   img.desktop {

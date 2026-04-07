@@ -36,6 +36,12 @@ h1 {
         border-radius: 14px;
         margin: 50px auto 0;
     }
+    .fontBouton {
+        &:hover {
+            color: $secondary-color;
+            background-color: $white-color;
+        }
+    }
 }
 
 
