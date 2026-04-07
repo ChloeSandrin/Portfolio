@@ -879,6 +879,45 @@ header #NavbarFil5 {
     width: 80%;
   }
 }
+.accueilMaquette .avion-container {
+  margin-top: -20px;
+}
+.accueilMaquette h1 {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
+  font-weight: 800;
+  color: #FED766;
+  font-size: 128px;
+  margin-top: -15px;
+  margin-bottom: 1%;
+}
+.accueilMaquette img {
+  margin: auto;
+  display: block;
+}
+.accueilMaquette .buttons {
+  display: flex;
+  gap: 20%;
+  justify-content: center;
+  margin-top: 50px;
+}
+.accueilMaquette .btn {
+  background: #636D86;
+  font-family: "Oswald";
+  color: #FAFAF5;
+  src: url(../assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
+  font-weight: 500;
+  font-size: 28px;
+  padding: 20px 60px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.accueilMaquette .btn:hover {
+  background-color: #FAFAF5;
+  color: #636D86;
+  cursor: pointer;
+}
+
 .presentation {
   width: 80%;
   margin: 155px auto;

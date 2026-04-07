@@ -27,6 +27,52 @@ $white-color: #FAFAF5;
   }
 }
 
+//Page Accueil Maquette//
+
+.accueilMaquette {
+  .avion-container {
+    margin-top: -20px;
+  }
+  h1 {
+    font-family: "Oswald";
+    src: url(../assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
+    font-weight: 800;
+    color: $primary-color;
+    font-size: 128px;
+    margin-top: -15px;
+    margin-bottom: 1%;
+  }
+
+  img {
+    margin: auto;
+    display: block;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .btn {
+    background: $secondary-color;
+    font-family: "Oswald";
+    color: $white-color;
+    src: url(../assets/fonts/Oswald/Oswald-SemiBold.woff2) format("woff2");
+    font-weight: 500;
+    font-size: 28px;
+    padding: 20px 60px;
+    border-radius: 15px;
+    text-decoration: none;
+    &:hover {
+      background-color: $white-color;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+}
+
 //Projet La Pal //
 
 .presentation {
