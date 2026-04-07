@@ -1083,6 +1083,71 @@ header #NavbarFil5 {
     width: 90% !important;
   }
 }
+.fondNoir {
+  background-color: #090C08;
+  color: #FAFAF5;
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto 50px;
+}
+
+#informationHyper {
+  width: 1420px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 620px 85px 735px;
+  grid-template-rows: 740px 10px;
+}
+#informationHyper #HyperPt1 {
+  grid-column: 1;
+  grid-row: 1/span 2;
+  margin-left: 45px;
+}
+#informationHyper #HyperPt1 div {
+  padding: 15px;
+}
+#informationHyper #HyperPt1 .bgBleu {
+  rotate: -5.26deg;
+  width: 400px;
+  padding: 25px;
+}
+#informationHyper #HyperPt1 .bgJaune {
+  rotate: 0.34deg;
+  width: 520px;
+}
+#informationHyper #HyperPt2 {
+  grid-column: 2/span 3;
+  grid-row: 1;
+  width: 80%;
+  margin-left: 65px;
+}
+#informationHyper #HyperPt3 {
+  position: relative;
+  z-index: 1;
+  grid-column: 2/span 3;
+  grid-row: 2;
+  margin: -270px 0 0 -100px;
+}
+#informationHyper #HyperPt3 h2 a {
+  text-align: center;
+  width: 250px;
+}
+#informationHyper #HyperPt3 h2 {
+  box-shadow: 10px 10px 25px rgba(9, 12, 8, 0.06), 20px 20px 50px rgba(9, 12, 8, 0.04);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 250px;
+  rotate: 5.38deg;
+  padding: 10px 12px 12px 10px;
+}
+#informationHyper #HyperPt3 div {
+  width: 760px;
+  padding: 15px;
+  margin: -25px 0 0 10px;
+}
+
 input::placeholder {
   font-family: "Poppins";
 }
