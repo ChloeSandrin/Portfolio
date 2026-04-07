@@ -862,7 +862,8 @@ header #NavbarFil5 {
 }
 
 .projet-img {
-  width: 70%; /* largeur comme tu voulais */
+  width: 70%;
+  /* largeur comme tu voulais */
   height: auto;
   display: block;
   margin: 50px auto;
@@ -1055,6 +1056,33 @@ header #NavbarFil5 {
   margin: -25px 0 0 10px;
 }
 
+@media (max-width: 768px) {
+  .presentation img {
+    width: 90%;
+  }
+  .mission {
+    background-image: url(../assets/images/TableaudeBordMobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: top center;
+    width: 100%;
+    padding: 0 0 100px 0;
+  }
+  .mission p {
+    padding: 95px 0 0 25px;
+    margin-bottom: -22px;
+  }
+  .mission ul {
+    padding-top: 10px;
+    padding-left: 55px;
+    width: 90%;
+  }
+  .mission li {
+    list-style-type: disc;
+    padding: 25px 0 0 1px;
+    width: 90% !important;
+  }
+}
 input::placeholder {
   font-family: "Poppins";
 }
