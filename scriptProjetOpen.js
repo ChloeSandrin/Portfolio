@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         easyjet: {
             name: "EASYJET",
-            desktop: "https://www.figma.com/proto/S9FSPO1Eu1Boutxt1Jk8pm/SANDRIN_Chlo%C3%A9_Figma_2026?node-id=29-806&p=f&viewport=-436%2C21%2C0.11&t=viyoyWnhZ0hhSTMs-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A808&page-id=29%3A805",
+            desktop: "https://www.figma.com/proto/S9FSPO1Eu1Boutxt1Jk8pm/SANDRIN_Chlo%C3%A9_Figma_2026?node-id=29-808&p=f&viewport=-436%2C21%2C0.11&t=rFwi0ah8SrpoEvOo-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A808&page-id=29%3A805",
             mobile: "https://www.figma.com/proto/S9FSPO1Eu1Boutxt1Jk8pm/SANDRIN_Chlo%C3%A9_Figma_2026?node-id=29-806&p=f&viewport=-436%2C21%2C0.11&t=viyoyWnhZ0hhSTMs-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=29%3A808&page-id=29%3A805"
         },
         hyperplanning: {
