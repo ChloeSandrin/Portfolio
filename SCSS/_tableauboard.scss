@@ -32,41 +32,57 @@ $white-color: #FAFAF5;
 
 #illustratorTableau {
     margin-left: 70px;
+    font-size: 18px;
+    p {
+        margin: 52px 0;
+    }
 
     img {
         width: 15%;
-        margin-bottom: 200px;
+        margin-bottom: 400px;
+        margin-right: 80px;
+        rotate: calc(10deg);
     }
 
     div {
         width: 70%;
-        margin: 50px 0 0 50px;
+        margin: 70px 0 0 50px;
     }
 }
 
 #figmaTableau {
     margin-left: 70px;
+    font-size: 18px;
+    p {
+        margin: 62px 0;
+    }
 
     #pMaquette {
-        width: 120%;
+        width: 145%;
         margin: 50px 0 0 50px;
     }
 
     #imgMaquette {
-        padding-top: 200px;
+        padding-top: 180px;
         padding-left: 40px;
         width: 100%;
+        rotate: calc(-10deg);
     }
 }
 
 #photoshopTableau {
     margin-left: 70px;
+    font-size: 18px;
+    p {
+        margin: 59px 0;
+    }
 
     img {
-        width: 25%;
+        width: 27%;
         height: 15%;
-        margin-bottom: 200px;
-        margin-top: 300px;
+        padding-top: 250px;
+        padding-right: 100px;
+        rotate: calc(-10deg);
     }
 
     div {
@@ -80,6 +96,7 @@ $white-color: #FAFAF5;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 18px;
 
     p {
         width: 90%;
@@ -90,12 +107,17 @@ $white-color: #FAFAF5;
 
 #indesignTableau {
     margin-left: 70px;
+    font-size: 18px;
+    p {
+        margin: 45px 0;
+    }
 
     img {
         width: 25%;
         height: 35%;
         margin-bottom: 100px;
         margin-top: 150px;
+        rotate: calc(-10deg);
     }
 
     div {
@@ -125,7 +147,6 @@ $white-color: #FAFAF5;
     }
 
     h3 {
-        background-image: url(../assets/images/surligne.png);
         background-repeat: no-repeat;
         background-position-x: 220px;
         background-position-y: 50px;

@@ -523,37 +523,53 @@ header #NavbarFil5 {
 
 #illustratorTableau {
   margin-left: 70px;
+  font-size: 18px;
+}
+#illustratorTableau p {
+  margin: 52px 0;
 }
 #illustratorTableau img {
   width: 15%;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
+  margin-right: 80px;
+  rotate: 10deg;
 }
 #illustratorTableau div {
   width: 70%;
-  margin: 50px 0 0 50px;
+  margin: 70px 0 0 50px;
 }
 
 #figmaTableau {
   margin-left: 70px;
+  font-size: 18px;
+}
+#figmaTableau p {
+  margin: 62px 0;
 }
 #figmaTableau #pMaquette {
-  width: 120%;
+  width: 145%;
   margin: 50px 0 0 50px;
 }
 #figmaTableau #imgMaquette {
-  padding-top: 200px;
+  padding-top: 180px;
   padding-left: 40px;
   width: 100%;
+  rotate: -10deg;
 }
 
 #photoshopTableau {
   margin-left: 70px;
+  font-size: 18px;
+}
+#photoshopTableau p {
+  margin: 59px 0;
 }
 #photoshopTableau img {
-  width: 25%;
+  width: 27%;
   height: 15%;
-  margin-bottom: 200px;
-  margin-top: 300px;
+  padding-top: 250px;
+  padding-right: 100px;
+  rotate: -10deg;
 }
 #photoshopTableau div {
   width: 60%;
@@ -565,6 +581,7 @@ header #NavbarFil5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 18px;
 }
 #vscodeTableau p {
   width: 90%;
@@ -574,12 +591,17 @@ header #NavbarFil5 {
 
 #indesignTableau {
   margin-left: 70px;
+  font-size: 18px;
+}
+#indesignTableau p {
+  margin: 45px 0;
 }
 #indesignTableau img {
   width: 25%;
   height: 35%;
   margin-bottom: 100px;
   margin-top: 150px;
+  rotate: -10deg;
 }
 #indesignTableau div {
   width: 60%;
@@ -601,7 +623,6 @@ header #NavbarFil5 {
   padding-top: 100px;
 }
 #tableauboard h3 {
-  background-image: url(../assets/images/surligne.png);
   background-repeat: no-repeat;
   background-position-x: 220px;
   background-position-y: 50px;
