@@ -114,6 +114,9 @@ h1 {
     height: auto;
     margin: -70px auto 0; /* centre horizontalement */
   }
+  h1 {
+    margin-top: 100px;
+  }
   .hero p {
     width: 80%;
   }
@@ -769,8 +772,7 @@ header #NavbarFil5 {
     background-size: 100% 65%;
   }
   #illustratorTableau img {
-    width: 35%;
-    margin: 10px auto 0;
+    display: none;
   }
   #illustratorTableau div {
     width: 70%;
@@ -786,12 +788,7 @@ header #NavbarFil5 {
     margin: 100px 0 0 50px;
   }
   #figmaTableau #imgMaquette {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: none;
   }
   #photoshopTableau {
     margin: 0;
@@ -799,9 +796,7 @@ header #NavbarFil5 {
     background-size: 100% 65%;
   }
   #photoshopTableau img {
-    width: 80%;
-    height: auto;
-    margin: 25px auto;
+    display: none;
   }
   #photoshopTableau div {
     width: 80%;
@@ -846,9 +841,7 @@ header #NavbarFil5 {
     background-size: 100% 65%;
   }
   #indesignTableau img {
-    width: 35%;
-    height: auto;
-    margin: 0 auto;
+    display: none;
   }
   #indesignTableau div {
     width: 80%;
@@ -1120,33 +1113,6 @@ header #NavbarFil5 {
   margin: -25px 0 0 10px;
 }
 
-@media (max-width: 768px) {
-  .presentation img {
-    width: 90%;
-  }
-  .mission {
-    background-image: url(../assets/images/TableaudeBordMobile.png);
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
-    background-position: top center;
-    width: 100%;
-    padding: 0 0 100px 0;
-  }
-  .mission p {
-    padding: 95px 0 0 25px;
-    margin-bottom: -22px;
-  }
-  .mission ul {
-    padding-top: 10px;
-    padding-left: 55px;
-    width: 90%;
-  }
-  .mission li {
-    list-style-type: disc;
-    padding: 25px 0 0 1px;
-    width: 90% !important;
-  }
-}
 .fondNoir {
   background-color: #090C08;
   color: #FAFAF5;
@@ -1212,6 +1178,64 @@ header #NavbarFil5 {
   margin: -25px 0 0 10px;
 }
 
+@media (max-width: 768px) {
+  .presentation img {
+    width: 90%;
+  }
+  .mission {
+    background-image: url(../assets/images/TableaudeBordMobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: top center;
+    width: 100%;
+    padding: 0 0 100px 0;
+  }
+  .mission p {
+    padding: 95px 0 0 25px;
+    margin-bottom: -22px;
+  }
+  .mission ul {
+    padding-top: 10px;
+    padding-left: 55px;
+    width: 90%;
+  }
+  .mission li {
+    list-style-type: disc;
+    padding: 25px 0 0 1px;
+    width: 90% !important;
+  }
+  #information {
+    display: flex;
+    flex-direction: column;
+  }
+  #information #CatfeesPt1 {
+    margin-left: 0;
+    width: 100vw;
+  }
+  #information .bgJaune {
+    width: 80vw !important;
+    margin: auto;
+  }
+  #information .bgBleu {
+    width: 80vw;
+    margin: auto;
+  }
+  #information #CatfeesPt3 {
+    margin: 0 !important;
+    width: 100vw;
+  }
+  #information h2 {
+    text-align: center !important;
+    width: 80vw !important;
+    margin: 30px 0 !important;
+  }
+  #information h2 a {
+    text-align: center;
+  }
+  #information img {
+    display: none;
+  }
+}
 input::placeholder {
   font-family: "Poppins";
 }
