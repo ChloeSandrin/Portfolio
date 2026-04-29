@@ -1464,6 +1464,9 @@ footer .bgBleu:hover {
   margin-top: 15px;
   margin-left: 205px;
 }
+#ContactFooter #linkLogo:hover {
+  filter: brightness(0.75);
+}
 #ContactFooter #avionFooter {
   margin-left: -25px;
 }
