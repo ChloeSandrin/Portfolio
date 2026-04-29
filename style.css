@@ -977,6 +977,15 @@ header #NavbarFil5 {
   text-align: center;
 }
 
+.final .fondNoir {
+  background-color: #090C08;
+  color: #FAFAF5;
+  padding: 20px 15px 20px 15px;
+  border-radius: 15px;
+  width: 60%;
+  margin: 0 auto 50px;
+}
+
 .mission {
   background-image: url(../assets/images/Tableau\ de\ bord.png);
   background-repeat: no-repeat;
@@ -1137,7 +1146,7 @@ header #NavbarFil5 {
   color: #FAFAF5;
   padding: 10px 15px 10px 15px;
   border-radius: 15px;
-  width: 90%;
+  width: 60%;
   margin: 0 auto 50px;
 }
 

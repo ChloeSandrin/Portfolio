@@ -106,6 +106,18 @@ $white-color: #FAFAF5;
   }
 }
 
+.final {
+  .fondNoir {
+  background-color: $black-color;
+  color: $white-color;
+  padding: 20px 15px 20px 15px;
+  border-radius: 15px;
+  width: 60%;
+  margin: 0 auto 50px;
+}
+}
+
+
 .mission {
   background-image: url(../assets/images/Tableau\ de\ bord.png);
   background-repeat: no-repeat;
@@ -302,7 +314,7 @@ $white-color: #FAFAF5;
   color: $white-color;
   padding: 10px 15px 10px 15px;
   border-radius: 15px;
-  width: 90%;
+  width: 60%;
   margin: 0 auto 50px;
 }
 
