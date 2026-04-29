@@ -296,6 +296,20 @@ a {
     background-position: center;
     z-index: -1; /* derrière tout le contenu */
   }
+  #projetOpen {
+    background-image: url("assets/images/Fond nuage 1.png");
+    background-size: cover;
+  }
+  #projetOpen h1 {
+    font-size: 100px;
+    padding-top: 40px;
+  }
+  #projetOpen .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
   .avion {
     margin: 0 -350px; /* supprime le décalage gauche */
     padding: 20px 0 20px 0; /* réduit le padding pour mobile */
@@ -316,10 +330,8 @@ a {
     padding-right: 0;
   }
 }
-header {
-  padding-top: 24px;
-}
 header nav {
+  margin-top: 25px;
   z-index: 4;
   position: fixed;
   width: 100vw;
@@ -712,6 +724,13 @@ header #NavbarFil5 {
   z-index: 10;
 }
 
+@media (max-width: 1400px) {
+  #competence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 768px) {
   #competence {
     display: flex;
@@ -1204,6 +1223,21 @@ header #NavbarFil5 {
     padding: 25px 0 0 1px;
     width: 90% !important;
   }
+  .conclusion {
+    width: 100vw;
+  }
+  .conclusion img {
+    width: 80%;
+  }
+  .conclusion #avantApres {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conclusion #avantApres div {
+    width: 80vw;
+  }
   #information {
     display: flex;
     flex-direction: column;
@@ -1217,7 +1251,7 @@ header #NavbarFil5 {
     margin: auto;
   }
   #information .bgBleu {
-    width: 80vw;
+    width: 80vw !important;
     margin: auto;
   }
   #information #CatfeesPt3 {
@@ -1227,10 +1261,10 @@ header #NavbarFil5 {
   #information h2 {
     text-align: center !important;
     width: 80vw !important;
-    margin: 30px 0 !important;
+    margin: 30px auto !important;
   }
   #information h2 a {
-    text-align: center;
+    margin: auto;
   }
   #information img {
     display: none;

@@ -409,6 +409,22 @@ $white-color: #FAFAF5;
 
     // Catfee's//
 
+    .conclusion {
+      width: 100vw;
+      img {
+        width: 80%;
+      }
+      #avantApres {
+        width: 95vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          div {
+            width: 80vw;
+          }
+         }
+    }
+
     #information  {
 
       display: flex;
@@ -417,12 +433,15 @@ $white-color: #FAFAF5;
         margin-left: 0;
         width: 100vw;
       }
+
+      
+
       .bgJaune {
         width: 80vw !important ;
         margin: auto;
       }
       .bgBleu {
-        width: 80vw;
+        width: 80vw !important;
         margin: auto;
       }
 
@@ -434,9 +453,9 @@ $white-color: #FAFAF5;
       h2 {
         text-align: center !important;
         width: 80vw !important;
-        margin: 30px 0 !important;
+        margin: 30px auto !important;
         a {
-          text-align: center;
+          margin: auto;
         }
       }
 

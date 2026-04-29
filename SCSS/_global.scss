@@ -162,6 +162,7 @@ a {
 
 /* Mobile : certains navigateurs iOS ne supportent pas fixed */
 @media (max-width: 768px) {
+
   body {
     background-attachment: scroll; /* fond scrollable */
     height: auto;
@@ -180,6 +181,20 @@ a {
     background-position: center;
     z-index: -1; /* derrière tout le contenu */
   }
+  #projetOpen {
+        background-image: url("assets/images/Fond nuage 1.png");
+        background-size: cover;
+        h1 {
+            font-size: 100px;
+            padding-top: 40px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+        }
+    }
   .avion {
     margin: 0 -350px;             /* supprime le décalage gauche */
     padding: 20px 0 20px 0; /* réduit le padding pour mobile */

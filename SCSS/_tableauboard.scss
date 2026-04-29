@@ -245,6 +245,15 @@ $white-color: #FAFAF5;
     z-index: 10;
 }
 
+@media (max-width: 1400px) {
+    #competence {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 @media (max-width: 768px) {
     #competence {
         display: flex;
