@@ -135,7 +135,7 @@ body {
   font-weight: 400; /* ou ton $Regular */
   font-size: 18px;
   color: #000; /* ou ton $black-color */
-  background-image: url("assets/images/Fond nuage 1.png");
+  background-image: url("assets/images/Fond nuage 1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,13 +291,13 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url("assets/images/Fond nuage 1.png");
+    background-image: url("assets/images/Fond nuage 1.webp");
     background-size: cover;
     background-position: center;
     z-index: -1; /* derrière tout le contenu */
   }
   #projetOpen {
-    background-image: url("assets/images/Fond nuage 1.png");
+    background-image: url("assets/images/Fond nuage 1.webp");
     background-size: cover;
   }
   #projetOpen h1 {
@@ -529,7 +529,7 @@ header #NavbarFil5 {
   grid-column: 1;
   grid-row: 2;
   margin-left: 70px;
-  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-image: url(../assets/images/Tableau\ de\ bord.webp);
   background-repeat: no-repeat;
   width: 800px;
   height: 900px;
@@ -627,7 +627,7 @@ header #NavbarFil5 {
   grid-column: 1;
   grid-row: 2;
   margin-left: 70px;
-  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-image: url(../assets/images/Tableau\ de\ bord.webp);
   background-repeat: no-repeat;
   width: 800px;
   height: 600px;
@@ -738,7 +738,7 @@ header #NavbarFil5 {
   }
   .tableauboardFond {
     margin: 0;
-    background-image: url(../assets/images/TableaudeBordMobile.png);
+    background-image: url(../assets/images/TableaudeBordMobile.webp);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top center;
@@ -747,7 +747,7 @@ header #NavbarFil5 {
   }
   .tableauboardFond1 {
     margin: 0 0 180px 0;
-    background-image: url(../assets/images/TableaudeBordMobile.png);
+    background-image: url(../assets/images/TableaudeBordMobile.webp);
     background-repeat: no-repeat;
     background-size: 100% 80%;
     background-position: top center;
@@ -987,7 +987,7 @@ header #NavbarFil5 {
 }
 
 .mission {
-  background-image: url(../assets/images/Tableau\ de\ bord.png);
+  background-image: url(../assets/images/Tableau\ de\ bord.webp);
   background-repeat: no-repeat;
   width: 800px;
   height: 500px;
@@ -1211,7 +1211,7 @@ header #NavbarFil5 {
     width: 90%;
   }
   .mission {
-    background-image: url(../assets/images/TableaudeBordMobile.png);
+    background-image: url(../assets/images/TableaudeBordMobile.webp);
     background-repeat: no-repeat;
     background-size: 100% 80%;
     background-position: top center;
